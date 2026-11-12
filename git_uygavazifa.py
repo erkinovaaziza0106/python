@@ -83,4 +83,25 @@
 
 # print(sorted_by_price(products))
 
+
+
 # 5 misol...
+
+# def are_numbers_ascending(text: str) -> bool:
+#     sozlar = text.split()
+#     son = -1
+    
+#     for soz in sozlar:
+#         if soz.isdigit():
+#             hozirgi_son = int(soz)
+            
+#             if hozirgi_son <= son:
+#                 return False
+                
+#             son = hozirgi_son
+            
+#     return True
+
+
+
+# print(are_numbers_ascending("1 qutida 5 ta yashil, 9 ta qizil, 12 ta sariq to’p bor edi"))
