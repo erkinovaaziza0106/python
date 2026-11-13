@@ -23,23 +23,17 @@
 
 # 2 masala...
 
-# def janr(cinema:list, genre:str)->list:
-#     filmlar=[]
-    
-#     for i in cinema:
-#        if  i.get("genre","").lower() ==genre.lower():
-#            filmlar.append(cinema)
-#     return filmlar
+# def search_by_genre(cinema: list, genre: str) -> list:
+#     return list(filter(lambda x: x['genre']==genre, cinema))
 
-
-# kino = [
+# cinema = [
 #     {"title": "Avatar", "genre": "Fantastika", "price": 40000},
 #     {"title": "Sherlock", "genre": "Detektiv", "price": 30000},
 #     {"title": "Oq yo'l", "genre": "Drama", "price": 25000},
 #     {"title": "Dune", "genre": "Fantastika", "price": 35000}
 # ]
 
-# print(janr(kino, "Drama"))
+# print(search_by_genre(cinema, input("G: ")))
 
 # 3 masala 
 
@@ -62,12 +56,8 @@
 # 4 masala...
 
 # def sorted_by_price(products: list) -> list:
-#     for i in products:
-#         return sorted(i)
+#     return sorted(products, key=lambda x: int(x[1]), reverse=True)
 
-    
-    
-    
 # products = [
 #     ('Olma', '12000', '50'),
 #     ('Banan', '8000', '100'),
@@ -88,20 +78,19 @@
 # 5 misol...
 
 # def are_numbers_ascending(text: str) -> bool:
-#     sozlar = text.split()
-#     son = -1
-    
-#     for soz in sozlar:
-#         if soz.isdigit():
-#             hozirgi_son = int(soz)
-            
-#             if hozirgi_son <= son:
-#                 return False
-                
-#             son = hozirgi_son
-            
-#     return True
+# 	new = [int(soz) for soz in text.split() if soz.isdigit()]
+# 	if new:
+# 		son = new[0]
+# 		for num in new[1:]:
+# 			if son>=num:
+# 				return False
+# 			son = num
+# 		return True
+# 	else:
+# 		return False
+
+# matn = input()
+# print(are_numbers_ascending(matn))
 
 
 
-# print(are_numbers_ascending("1 qutida 5 ta yashil, 9 ta qizil, 12 ta sariq to’p bor edi"))
